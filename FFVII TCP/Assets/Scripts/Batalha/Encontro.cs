@@ -5,11 +5,12 @@ using UnityEngine;
 public class Encontro : MonoBehaviour
 {
     public Vector3[] umInimigo, doisInimigo, tresInimigo, quatroInimigo, cincoInimigo;
-    public Vector3[] partyPosição;
+    public Vector3 partyPosição1,partyPosição2;
     public GameObject mobPrefab;
-    public GameObject partyPrefab;
+    public GameObject cloudPrefab;
+    public GameObject barretPrefab;
 
-    [Range (0,5)][SerializeField]int quantidadeDeInimigos;
+    [Range (0,5)][SerializeField]int quantidadeDeInimigos, quantidadeDePlayers;
     void Start()
     {
         if (quantidadeDeInimigos == 1)
@@ -44,13 +45,17 @@ public class Encontro : MonoBehaviour
                 Instantiate(mobPrefab, cincoInimigo[i], mobPrefab.gameObject.transform.rotation);
             }
         }
-        for (int i = 0; i <= 1; i++)
+        if (quantidadeDePlayers == 1)
         {
-            Instantiate(partyPrefab, partyPosição[i], partyPrefab.gameObject.transform.rotation);
+            for (int i = 0; i <= 0; i++)
+            {
+                Instantiate(cloudPrefab, partyPosição1, cloudPrefab.gameObject.transform.rotation);
+            }
         }
-    }
-    void Update()
-    {
-        
+        if (quantidadeDePlayers == 2)
+        {
+            Instantiate(cloudPrefab, partyPosição1, cloudPrefab.gameObject.transform.rotation);
+            Instantiate(barretPrefab, partyPosição2, barretPrefab.gameObject.transform.rotation);
+        }
     }
 }
