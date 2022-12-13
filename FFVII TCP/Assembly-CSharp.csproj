@@ -56,14 +56,22 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Batalha\Encontro.cs" />
-    <Compile Include="Assets\Scripts\Global\Movimentação.cs" />
-    <Compile Include="Assets\Scripts\Batalha\MOBS\MOB MP.cs" />
-    <Compile Include="Assets\Scripts\Batalha\Batalha.cs" />
-    <Compile Include="Assets\Scripts\Global\EncontroAleatorio.cs" />
-    <Compile Include="Assets\Scripts\Batalha\CloudStatus.cs" />
-    <Compile Include="Assets\Scripts\Batalha\BarretStatus.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\V2\Mobs.cs" />
+    <Compile Include="Assets\Scripts\Menu\Menu.cs" />
+    <Compile Include="Assets\Scripts\Inventario\Inventario.cs" />
+    <Compile Include="Assets\Scripts\V2\SalvarPosicao.cs" />
+    <Compile Include="Assets\Scripts\V2\CloudV2.cs" />
+    <Compile Include="Assets\Scripts\V1\Global\Movimentação.cs" />
+    <Compile Include="Assets\Scripts\Inventario\ItemDatabase.cs" />
+    <Compile Include="Assets\Scripts\Inventario\SlotScript.cs" />
+    <Compile Include="Assets\Scripts\V1\Batalha\MOBS\MOBMP.cs" />
+    <Compile Include="Assets\Scripts\V2\CloudStatus.cs" />
+    <Compile Include="Assets\Scripts\V1\Global\EncontroAleatorio.cs" />
+    <Compile Include="Assets\Scripts\V2\BarretV2.cs" />
+    <Compile Include="Assets\Scripts\V2\BarretStatus.cs" />
+    <Compile Include="Assets\Scripts\Inventario\Itens.cs" />
+    <Compile Include="Assets\Scripts\V2\GameManager.cs" />
+    <Compile Include="Assets\Scripts\V2\EncontroV2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

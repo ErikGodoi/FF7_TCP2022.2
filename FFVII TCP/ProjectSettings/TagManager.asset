@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Perigo
+  - Inimigos
+  - ItemDatabase
+  - Inventario
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - Cenario
   - Prerigo
   - Player
-  - 
+  - Invisivel
   - 
   - 
   - 

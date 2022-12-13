@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2075222838448513514}
   - component: {fileID: 2075222838448513525}
   - component: {fileID: 2075222838448513524}
-  - component: {fileID: 1716585461975499476}
   m_Layer: 0
   m_Name: Claudinho
   m_TagString: Untagged
@@ -99,18 +98,3 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1716585461975499476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075222838448513526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d99a1b7e8c92a24fb91380e96c7d2c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textoDeNome: {fileID: 0}
-  textoDeHP: {fileID: 0}
-  textoDeMP: {fileID: 0}
