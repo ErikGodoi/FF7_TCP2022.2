@@ -23,8 +23,8 @@ public class Movimentação : MonoBehaviour
     public Transform cam;
     Vector3 mov;
     [Range(0, 100)][SerializeField] float vel;
-    [Range(0, 100)][SerializeField] float smooth, smoothVel;
-    [Range(0, 10)][SerializeField] float radiusEncontro;
+    //  [Range(0, 100)][SerializeField] float smooth, smoothVel;
+    //  [Range(0, 10)][SerializeField] float radiusEncontro;
     CharacterController controle;
 
     // Cenas
@@ -38,6 +38,8 @@ public class Movimentação : MonoBehaviour
 
     // teste
     bool cenaDeBatalhaAtiva;
+
+    Vector3 cena2Posicao;
     void Start()
     {
         posicao = new Vector3(posX, posY, posZ);
@@ -49,6 +51,7 @@ public class Movimentação : MonoBehaviour
         CenaAtual = SceneManager.GetActiveScene();
         nomeDaCena = CenaAtual.name;
         SpawnEnemies = FindObjectOfType<EncontroV2>();
+        cena2Posicao = new Vector3(-80, 1, 0);
 
         // teste
         cenaDeBatalhaAtiva = SceneManager.GetSceneByName("Batalha").isLoaded;
@@ -69,7 +72,14 @@ public class Movimentação : MonoBehaviour
             batalhaLayer = false;
         }
         else batalhaLayer = true;
-
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == ("TPCena2"))
+        {
+            SceneManager.LoadScene("Cena2");
+            gameObject.transform.position = cena2Posicao;
+        }
     }
     void Move2()
     {
@@ -78,7 +88,7 @@ public class Movimentação : MonoBehaviour
         Vector3 moveDirection = Vector3.zero;
         if (controle.isGrounded)
         {
-            moveDirection = new Vector3(0f, 0f, Input.GetAxis("Vertical"));
+            moveDirection = new Vector3(0f, 0f, Input.GetAxis("Vertical") * vel);
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= speed;
         }
@@ -113,10 +123,10 @@ public class Movimentação : MonoBehaviour
             SceneManager.LoadScene("Batalha");
         }
     }
-    private void OnDrawGizmosSelected()
+    /*private void OnDrawGizmosSelected()
     {
         if (gameObject == null)
             return;
         Gizmos.DrawWireSphere(gameObject.transform.position, radiusEncontro);
-    }
+    }*/
 }

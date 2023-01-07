@@ -192,42 +192,46 @@ public class CloudV2 : MonoBehaviour
     public void HUDgelo()
     {
         painelGelo.SetActive(true);
+        painelBolt.SetActive(false);
+        painelDeInimigosCFisico.SetActive(false);
         AtualizarHUDGelo();
     }
     public void HUDbolt()
     {
         painelBolt.SetActive(true);
+        painelGelo.SetActive(false);
+        painelDeInimigosCFisico.SetActive(false);
         AtualizarHUDRaio();
     }
     public void CloudIce()
     {
         cStatus.cDanoMagico = 6 * (cStatus.cMagicAttack + cStatus.cLevel);
 
-        if (botaoMob1.gameObject.name == "MobP1C")
+        if (botaoGelo[0].gameObject.name == "MobP1CGelo")
         {
             inimigo[0].MobVida(cStatus.cDanoMagico * inimigo[0].fIce);
             turno = 0;
             return;
         }
-        if (botaoMob2.gameObject.name == "MobP2C")
+        if (botaoGelo[1].gameObject.name == "MobP2CGelo")
         {
             inimigo[1].MobVida(cStatus.cDanoMagico * inimigo[1].fIce);
             turno = 0;
             return;
         }
-        if (botaoMob3.gameObject.name == "MobP3C")
+        if (botaoGelo[2].gameObject.name == "MobP3CGelo")
         {
             inimigo[2].MobVida(cStatus.cDanoMagico * inimigo[2].fIce);
             turno = 0;
             return;
         }
-        if (botaoMob4.gameObject.name == "MobP4C")
+        if (botaoGelo[3].gameObject.name == "MobP4CGelo")
         {
             inimigo[3].MobVida(cStatus.cDanoMagico * inimigo[3].fIce);
             turno = 0;
             return;
         }
-        if (botaoMob5.gameObject.name == "MobP5C")
+        if (botaoGelo[4].gameObject.name == "MobP5CGelo")
         {
             inimigo[4].MobVida(cStatus.cDanoMagico * inimigo[4].fIce);
             turno = 0;
@@ -238,32 +242,32 @@ public class CloudV2 : MonoBehaviour
     {
         cStatus.cDanoMagico = 6 * (cStatus.cMagicAttack + cStatus.cLevel);
 
-        if (botaoMob1.gameObject.name == "MobP1C")
+        if (botaoRaio[0].gameObject.name == "MobP1CRaio")
         {
             inimigo[0].MobVida(cStatus.cDanoMagico * inimigo[0].fBolt);
             turno = 0;
             return;
         }
-        if (botaoMob2.gameObject.name == "MobP2C")
+        if (botaoRaio[1].gameObject.name == "MobP2CRaio")
         {
             inimigo[1].MobVida(cStatus.cDanoMagico * inimigo[1].fBolt);
             turno = 0;
             return;
         }
         
-        if (botaoMob3.gameObject.name == "MobP3C")
+        if (botaoRaio[2].gameObject.name == "MobP3CRaio")
         {
             inimigo[2].MobVida(cStatus.cDanoMagico * inimigo[2].fBolt);
             turno = 0;
             return;
         }
-        if (botaoMob4.gameObject.name == "MobP4C")
+        if (botaoRaio[3].gameObject.name == "MobP4CRaio")
         {
             inimigo[3].MobVida(cStatus.cDanoMagico * inimigo[3].fBolt);
             turno = 0;
             return;
         }
-        if (botaoMob5.gameObject.name == "MobP5C")
+        if (botaoRaio[4].gameObject.name == "MobP5CRaio")
         {
             inimigo[4].MobVida(cStatus.cDanoMagico * inimigo[4].fBolt);
             turno = 0;
@@ -275,6 +279,9 @@ public class CloudV2 : MonoBehaviour
         cStatus.cDano = ((cStatus.cAttack + cStatus.cLevel) / 32) * ((cStatus.cAttack * cStatus.cLevel) / 32) + cStatus.cAttack;
         Debug.Log(cStatus.cDano);
         painelDeInimigosCFisico.SetActive(true);
+        painelListaMagia.SetActive(false);
+        painelGelo.SetActive(false);
+        painelBolt.SetActive(false);
         inimigo = FindObjectsOfType<Mobs>();
         AtualizarHUD();
     }

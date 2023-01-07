@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Batalha.unity
     guid: ed1e5ade7b6a7e045ae0b83558190861
+  - enabled: 1
+    path: Assets/Scenes/Cena1.unity
+    guid: 6a9fef1ed4a6f0e49a04f890f263ef6b
+  - enabled: 1
+    path: Assets/Scenes/Cena2.unity
+    guid: 4c26e4140dc1a764bac9bbb51d1fca8b
   m_configObjects: {}
