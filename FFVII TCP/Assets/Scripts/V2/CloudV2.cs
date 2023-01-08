@@ -38,6 +38,7 @@ public class CloudV2 : MonoBehaviour
     // Defesa
     bool defendendo;
 
+    public bool spawnou;
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -47,7 +48,10 @@ public class CloudV2 : MonoBehaviour
     }
     private void Update()
     {
-        gm.VerificacaoDeVitoria();
+        if (spawnou == true)
+        {
+            gm.VerificacaoDeVitoria();
+        }
         cenaAtual = SceneManager.GetSceneByName("Batalha").isLoaded;
         if (cenaAtual == true)
         {
@@ -154,6 +158,7 @@ public class CloudV2 : MonoBehaviour
     }
     public void CloudDanoFisico()
     {
+        
         if (botaoMob1.gameObject.name == "MobP1C")
         {
             inimigo[0].MobVida(cStatus.cDano);

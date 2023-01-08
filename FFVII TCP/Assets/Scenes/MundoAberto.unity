@@ -2222,9 +2222,6 @@ MonoBehaviour:
   carregandoBatalha: 0
   cam: {fileID: 963194228}
   vel: 10
-  smooth: 0.1
-  smoothVel: 0
-  radiusEncontro: 1.2
   emCombate: 0
   mundo: {fileID: 0}
   CenaAtual:

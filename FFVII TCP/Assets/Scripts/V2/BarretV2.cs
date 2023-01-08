@@ -32,6 +32,8 @@ public class BarretV2 : MonoBehaviour
 
     // Defesa
     bool defendendo;
+
+    bool spawnou;
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -41,7 +43,10 @@ public class BarretV2 : MonoBehaviour
     }
     private void Update()
     {
-        gm.VerificacaoDeVitoria();
+        if (spawnou == true)
+        {
+            gm.VerificacaoDeVitoria();
+        }
         cenaAtual = SceneManager.GetSceneByName("Batalha").isLoaded;
         if (cenaAtual == true)
         {

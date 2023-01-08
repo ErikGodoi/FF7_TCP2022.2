@@ -5,23 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Movimentação : MonoBehaviour
 {
-    // posição no mundo
-    public float posX, posY, posZ;
-    public float rotX, rotY, rotZ;
-    public Vector3 posicao;
-    public Vector3 rotacao;
     // GAMEMANAGER
     GameManager gm;
 
     // sistema de encontro aleatório
     public LayerMask prerigoLayer;
     public bool batalhaLayer;
+    public bool cena3Batalha;
+    public bool cena4Batalha;
     public bool podeEntrarEmBatalha;
     public float carregandoBatalha;
 
     // Movimentação
     public Transform cam;
-    Vector3 mov;
     [Range(0, 100)][SerializeField] float vel;
     //  [Range(0, 100)][SerializeField] float smooth, smoothVel;
     //  [Range(0, 10)][SerializeField] float radiusEncontro;
@@ -29,32 +25,20 @@ public class Movimentação : MonoBehaviour
 
     // Cenas
     public bool emCombate;
-    public GameObject mundo;
-    public Scene CenaAtual;
-    string nomeDaCena;
-
-    // Script de Encontro Aleatório
-    EncontroV2 SpawnEnemies;
 
     // teste
-    bool cenaDeBatalhaAtiva;
+    CarregadorDeCena mudaCena;
 
-    Vector3 cena2Posicao;
+    // Batalha Inicial
+    bool batalhaIntro = false;
+    EncontroV2 batalha;
     void Start()
     {
-        posicao = new Vector3(posX, posY, posZ);
-        rotacao = new Vector3(rotX, rotY, rotZ);
+        mudaCena = FindObjectOfType<CarregadorDeCena>();
         gm = FindObjectOfType<GameManager>();
         emCombate = false;
-        mundo = GameObject.Find("Mundo");
         controle = gameObject.GetComponent<CharacterController>();
-        CenaAtual = SceneManager.GetActiveScene();
-        nomeDaCena = CenaAtual.name;
-        SpawnEnemies = FindObjectOfType<EncontroV2>();
-        cena2Posicao = new Vector3(-80, 1, 0);
-
-        // teste
-        cenaDeBatalhaAtiva = SceneManager.GetSceneByName("Batalha").isLoaded;
+        batalha = FindObjectOfType<EncontroV2>();
     }
     private void FixedUpdate()
     {
@@ -63,22 +47,57 @@ public class Movimentação : MonoBehaviour
             Move2();
             EntrarEmBatalha();
         }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            transform.position = new Vector3(40, -4, 12);
+        }
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Debug.Log(hit.gameObject.name);
-        if (hit.gameObject.name != ("PrerigoSec1Mapa1"))
+        if (hit.gameObject.name == ("PrerigoSec1Mapa1"))
         {
-            batalhaLayer = false;
+            batalhaLayer = true;
         }
-        else batalhaLayer = true;
+        if (hit.gameObject.name == ("CorredorReator"))
+        {
+            cena3Batalha = true;
+        }
+        if (hit.gameObject.name == ("EntradaReator"))
+        {
+            cena4Batalha = true;
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == ("TPCena2"))
         {
             SceneManager.LoadScene("Cena2");
-            gameObject.transform.position = cena2Posicao;
+            /*mudaCena.entrouCena2 = true;
+            mudaCena.PlayerPosition();
+            mudaCena.resetouPosicao = false;*/
+        }
+        if (other.gameObject.name == ("TPCena3"))
+        {
+            SceneManager.LoadScene("Cena3");
+            /*mudaCena.entrouCena3 = true;
+            mudaCena.PlayerPosition();
+            mudaCena.resetouPosicao = false;*/
+        }
+        if (other.gameObject.name == ("TPCena4"))
+        {
+            SceneManager.LoadScene("Cena4");
+            /*mudaCena.entrouCena4 = true;
+            mudaCena.PlayerPosition();
+            mudaCena.resetouPosicao = false;*/
+        }
+        if (other.gameObject.name == ("BatalhaInicial") && batalhaIntro == false)
+        {
+            batalhaIntro = true;
+            emCombate = true;
+            SceneManager.LoadScene("Batalha");
+            batalha.Sec1Map1 = true;
+            batalha.SpawnPorMapa();
         }
     }
     void Move2()
@@ -100,6 +119,16 @@ public class Movimentação : MonoBehaviour
     }
     void EntrarEmBatalha()
     {
+        // Cena 3
+        if (cena3Batalha == true)
+        {
+            carregandoBatalha += 0.025f;
+        }
+        // Cena 4
+        if (cena4Batalha == true)
+        {
+            carregandoBatalha += 0.025f;
+        }
         if (batalhaLayer == true)
         {
             //carregandoBatalha += 0.025f;
@@ -114,13 +143,24 @@ public class Movimentação : MonoBehaviour
         {
             podeEntrarEmBatalha = false;
         }
-        if (podeEntrarEmBatalha == true)
+        if (podeEntrarEmBatalha == true && cena3Batalha == true)
         {
-            Debug.Log("Entrou em batalha");
-            //gm.SalvaPosicao();
+            Debug.Log("Entrou em batalha na cena 3");
             emCombate = true;
             carregandoBatalha = 0;
             SceneManager.LoadScene("Batalha");
+            batalha.Sec1Map3 = true;
+            batalha.SpawnPorMapa();
+            batalha.Sec1Map3 = false;
+        }
+        if (podeEntrarEmBatalha == true && cena4Batalha == true)
+        {
+            emCombate = true;
+            carregandoBatalha = 0;
+            SceneManager.LoadScene("Batalha");
+            batalha.Rec1Map1 = true;
+            batalha.SpawnPorMapa();
+            batalha.Rec1Map1 = false;
         }
     }
     /*private void OnDrawGizmosSelected()

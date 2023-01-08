@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Evento1 : MonoBehaviour
 {
-    public GameObject[] Portoes;
+    public GameObject portaoE, portaoD;
 
-    bool ativaEvento;
-
-    float desliza = 0.3f;
+    public bool ativaEvento;
+    float portaoMax = 30f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == ("Player"))
@@ -18,23 +17,14 @@ public class Evento1 : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Evento01();
+        evento01();
     }
-    void Evento01()
+    public void evento01()
     {
         if (ativaEvento == true)
         {
-            if (Portoes[0].transform.position.x >= 30)
-            {
-                Portoes[0].transform.position = new Vector3(Portoes[0].transform.position.x, 1, 0);
-                Portoes[1].transform.position = new Vector3(Portoes[0].transform.position.x, 1, 0);
-            }
-            if (Portoes[0].transform.position.x <= 29.9)
-            {
-                Portoes[0].transform.position = new Vector3(Portoes[0].transform.position.x + desliza, 1, 0);
-                Portoes[1].transform.position = new Vector3(Portoes[0].transform.position.x - desliza, 1, 0);
-            }
+            portaoE.transform.Translate(1f * Time.fixedDeltaTime, 0, 0);
+            portaoD.transform.Translate(-1f * Time.fixedDeltaTime, 0, 0);
         }
-        
     }
 }
