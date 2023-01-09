@@ -71,6 +71,24 @@ public class CloudStatus : MonoBehaviour
     }
     public void CloudLevelUP()
     {
+        cLevel += 1;
 
+        cHpMax += 100;
+        cMpMax += 50;
+
+        cStr += 3;
+        cDex += 2;
+        cVit += 2;
+        cMagic += 3;
+        cSpirit += 3;
+        cLuck += 1;
+
+        cAttack += 5;
+        cDefense += 3;
+        cMagicAttack += 3;
+        cMagicDefense += 3;
+
+        cHp = cHpMax;
+        cMp = cMpMax;
     }
 }

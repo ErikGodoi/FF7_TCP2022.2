@@ -69,6 +69,24 @@ public class BarretStatus : MonoBehaviour
     }
     public void BarretLevelUP()
     {
+        bLevel += 1;
 
+        bHpMax += 100;
+        bMpMax += 50;
+
+        bStr += 3;
+        bDex += 2;
+        bVit += 2;
+        bMagic += 3;
+        bSpirit += 3;
+        bLuck += 1;
+
+        bAttack += 5;
+        bDefense += 3;
+        bMagicAttack += 3;
+        bMagicDefense += 3;
+
+        bHp = bHpMax;
+        bMp = bMpMax;
     }
 }
