@@ -28,7 +28,7 @@ public class EncontroV2 : MonoBehaviour
     public bool Rec1Map1, Rec1Map2, Rec1Map3, Rec1Map4, Rec1Map5;
 
     // rolagem de valor para qual mob será spawnado
-    int Aleatoriedade;
+    public int Aleatoriedade;
 
     public CloudV2 player;
     private void Start()
@@ -55,6 +55,14 @@ public class EncontroV2 : MonoBehaviour
         E1SweeperMap5 = false;
         E1Sweeper2GruntMap5 = false;
         BossFight = false;
+        /*Sec1Map1 = false;
+        Sec1Map2 = false;
+        Sec1Map3 = false;
+        Rec1Map1 = false;
+        Rec1Map2 = false;
+        Rec1Map3 = false;
+        Rec1Map4 = false;
+        Rec1Map5 = false;*/
     }
     public void SpawnPorMapa()
     {

@@ -55,22 +55,25 @@ public class Movimentação : MonoBehaviour
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        cena2Batalha = false;
+        cena3Batalha = false;
+        cena4Batalha = false;
         Debug.Log(hit.gameObject.name);
         if (hit.gameObject.name == ("PrerigoSec1Mapa1"))
         {
-            batalhaLayer = true;
+            //batalhaLayer = true;
         }
         if (hit.gameObject.name == ("Cena2Batalha"))
         {
-            cena2Batalha = true;
+            //cena2Batalha = true;
         }
         if (hit.gameObject.name == ("CorredorReator"))
         {
-            cena3Batalha = true;
+            //cena3Batalha = true;
         }
         if (hit.gameObject.name == ("EntradaReator"))
         {
-            cena4Batalha = true;
+            //cena4Batalha = true;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -78,32 +81,29 @@ public class Movimentação : MonoBehaviour
         if (other.gameObject.name == ("TPCena2"))
         {
             SceneManager.LoadScene("Cena2");
-            /*mudaCena.entrouCena2 = true;
-            mudaCena.PlayerPosition();
-            mudaCena.resetouPosicao = false;*/
         }
         if (other.gameObject.name == ("TPCena3"))
         {
             SceneManager.LoadScene("Cena3");
-            /*mudaCena.entrouCena3 = true;
-            mudaCena.PlayerPosition();
-            mudaCena.resetouPosicao = false;*/
         }
         if (other.gameObject.name == ("TPCena4"))
         {
             SceneManager.LoadScene("Cena4");
-            /*mudaCena.entrouCena4 = true;
-            mudaCena.PlayerPosition();
-            mudaCena.resetouPosicao = false;*/
+        }
+        if (other.gameObject.name == ("TPCena5"))
+        {
+            SceneManager.LoadScene("Cena5");
         }
         if (other.gameObject.name == ("BatalhaInicial") && batalhaIntro == false)
         {
             batalhaIntro = true;
             emCombate = true;
             PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetFloat("Posicao.Y", transform.position.y);
             SceneManager.LoadScene("Batalha");
             batalha.Sec1Map1 = true;
             batalha.SpawnPorMapa();
+            batalha.Sec1Map1 = false;
         }
     }
     void Move2()

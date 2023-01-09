@@ -39,6 +39,9 @@ public class CloudV2 : MonoBehaviour
     bool defendendo;
 
     public bool spawnou;
+
+    // Teste de vida
+    int hpEmInt;
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -87,7 +90,6 @@ public class CloudV2 : MonoBehaviour
         painelListaMagia = GameObject.Find("AcaoMagicaC");
         painelGelo = GameObject.Find("CloudDanoGelo");
         painelBolt = GameObject.Find("CloudDanoRaio");
-
         botaoMob1 = GameObject.Find("MobP1C");
         botaoMob2 = GameObject.Find("MobP2C");
         botaoMob3 = GameObject.Find("MobP3C");
@@ -103,7 +105,6 @@ public class CloudV2 : MonoBehaviour
         botaoRaio[2] = GameObject.Find("MobP3CRaio");
         botaoRaio[3] = GameObject.Find("MobP4CRaio");
         botaoRaio[4] = GameObject.Find("MobP5CRaio");
-
     }
     void CloudTurno()
     {
@@ -129,7 +130,7 @@ public class CloudV2 : MonoBehaviour
     {
         if (defendendo == true)
         {
-            cStatus.cHp -= (dano + cStatus.cDefense * 0.5f);
+            cStatus.cHp = (dano + cStatus.cDefense * 0.5f);
         }
         else
         {

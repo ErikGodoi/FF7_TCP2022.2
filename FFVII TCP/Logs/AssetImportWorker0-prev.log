@@ -1,0 +1,718 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pt' Physical Memory: 12216 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Erik/Documents/GitHub/FF7_TCP2022.2/FFVII TCP
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62586
+Successfully changed project path to: C:/Users/Erik/Documents/GitHub/FF7_TCP2022.2/FFVII TCP
+C:/Users/Erik/Documents/GitHub/FF7_TCP2022.2/FFVII TCP
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 134.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Erik/Documents/GitHub/FF7_TCP2022.2/FFVII TCP/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     2007 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009120 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 145.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.135 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1136ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (828ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (196ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (488ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (146ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (242ms)
+				ProcessInitializeOnLoadMethodAttributes (83ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011305 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Erik\Documents\GitHub\FF7_TCP2022.2\FFVII TCP\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Erik\Documents\GitHub\FF7_TCP2022.2\FFVII TCP\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.958 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1959ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (1575ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (452ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (115ms)
+			SetupLoadedEditorAssemblies (786ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (541ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3707 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (1.4 MB). Loaded Objects now: 4152.
+Memory consumption went from 138.7 MB to 137.3 MB.
+Total: 4.862400 ms (FindLiveObjects: 0.420600 ms CreateObjectMapping: 0.142900 ms MarkObjects: 3.783300 ms  DeleteObjects: 0.514100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8030.229602 seconds.
+  path: Assets/Scenes/Cena5.unity
+  artifactKey: Guid(940db3ba8884d1549a32a9010013afa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Cena5.unity using Guid(940db3ba8884d1549a32a9010013afa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85b0a3af3097397ab86e6f179209b3db') in 0.021173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.490080 seconds.
+  path: Assets/Testes/Cena 5/TCP_II_FINAL REACTOR.fbx
+  artifactKey: Guid(fc97ee74eeb815c4aa03ff8f0b50dc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/TCP_II_FINAL REACTOR.fbx using Guid(fc97ee74eeb815c4aa03ff8f0b50dc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81d608f0700f837f14cc7c4da9275ee') in 2.087797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.256533 seconds.
+  path: Assets/Testes/Cena 5/TCP_II_FINAL REACTOR.fbx
+  artifactKey: Guid(fc97ee74eeb815c4aa03ff8f0b50dc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/TCP_II_FINAL REACTOR.fbx using Guid(fc97ee74eeb815c4aa03ff8f0b50dc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2f890a30fd30a95230781e244a43eb') in 1.351803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 238.273671 seconds.
+  path: Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx
+  artifactKey: Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx using Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e5d035011415c44972d2dab0e3bf12') in 1.956582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.460955 seconds.
+  path: Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx
+  artifactKey: Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx using Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3213ffb478b83fcd953603e02c0a1335') in 1.694213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.254534 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material
+  artifactKey: Guid(0358d5538a4adb349816a28f7cb719bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material using Guid(0358d5538a4adb349816a28f7cb719bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047344c5c6a2aee3e29feb519b87f4f3') in 0.012030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.271685 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/armarmor_TEXTURE.003.mat
+  artifactKey: Guid(a5d7c46428b44ca469b9279652f124f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/armarmor_TEXTURE.003.mat using Guid(a5d7c46428b44ca469b9279652f124f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f228e452d5f41b4b86c0c932a4c45a5') in 0.026832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.031.mat
+  artifactKey: Guid(f7a987fbe2f386a4090044a403c76490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.031.mat using Guid(f7a987fbe2f386a4090044a403c76490) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f052572eb0ff697cf687f6344b5589') in 0.017419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.067.mat
+  artifactKey: Guid(5da108439fbf17640b31c9418c811044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.067.mat using Guid(5da108439fbf17640b31c9418c811044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6006906f688f9f6ea82a7fa052eb1edd') in 0.022838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.080.mat
+  artifactKey: Guid(815ea12a15a056846ad707ed56c836b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.080.mat using Guid(815ea12a15a056846ad707ed56c836b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88bc2d582f8eb318d5f6902754a9995') in 0.031100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.069.mat
+  artifactKey: Guid(47491e0ba0308e746820c1eae36dc3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.069.mat using Guid(47491e0ba0308e746820c1eae36dc3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36642e6adbf892c85fde16da7b228c3e') in 0.029447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Chao1.mat
+  artifactKey: Guid(75cc2a15f6cc0d44194640c448b4348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Chao1.mat using Guid(75cc2a15f6cc0d44194640c448b4348d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c52ee8cc18ddb258808535aee806ec') in 0.023564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.074.mat
+  artifactKey: Guid(9f7308a9a9e8a9a4fb510200bab2bb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.074.mat using Guid(9f7308a9a9e8a9a4fb510200bab2bb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c272764d3b8f5526b8e73ca601c410') in 0.027357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.062.mat
+  artifactKey: Guid(848fa4c6ba37d43488ab7af0ef7a903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.062.mat using Guid(848fa4c6ba37d43488ab7af0ef7a903c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e4eab15d2e911b65a902f28da3def2') in 0.028140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.056.mat
+  artifactKey: Guid(7fba9a6dce6cbb843b0c8fa088fa3aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.056.mat using Guid(7fba9a6dce6cbb843b0c8fa088fa3aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1694f98e539240cae4411587e45242e') in 0.026097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.049.mat
+  artifactKey: Guid(6b16234b83207684fa7643e3729163ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.049.mat using Guid(6b16234b83207684fa7643e3729163ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69704d2bb0a129177c63c75b6a4d7750') in 0.027231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.061.mat
+  artifactKey: Guid(b813a4d65ea50f54c9104b0b8f290db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.061.mat using Guid(b813a4d65ea50f54c9104b0b8f290db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd5826adf0bea9e97eaf5c4c1b8fd9c') in 0.029059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.026.mat
+  artifactKey: Guid(50c044bcde88d554fb14cfc077863032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.026.mat using Guid(50c044bcde88d554fb14cfc077863032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6003f52702f13120fc49501341bba2e1') in 0.028855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.011.mat
+  artifactKey: Guid(35260f0ca041b7b42aad7670b8cfb3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.011.mat using Guid(35260f0ca041b7b42aad7670b8cfb3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ddbfa96e9cb75e72d1889c4fcf3abf') in 0.021092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.001.mat
+  artifactKey: Guid(808bf25c2f69bad469104e90cd151953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.001.mat using Guid(808bf25c2f69bad469104e90cd151953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39e2e7c3fe9bdf381afc0ffdc9511b5') in 0.032103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.009.mat
+  artifactKey: Guid(0d99b9591560d8a41b1bdcf10f609b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.009.mat using Guid(0d99b9591560d8a41b1bdcf10f609b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb41242d00cf4dc71cc797aab9d5b276') in 0.033196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.064.mat
+  artifactKey: Guid(119b129e712b3054ba28e9a77d3fd188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.064.mat using Guid(119b129e712b3054ba28e9a77d3fd188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b2fc0eb1322f9942c80ed97a199b9a2') in 0.042812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Body_TEXTURES.003.mat
+  artifactKey: Guid(733b84791158edf40960a7e03302834b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Body_TEXTURES.003.mat using Guid(733b84791158edf40960a7e03302834b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6d0a42797521b85da9593d00c9ad9b') in 0.033608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.047.mat
+  artifactKey: Guid(9dd4d178ab328874b952303521af14b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.047.mat using Guid(9dd4d178ab328874b952303521af14b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ee078be4127fbc72b5eb1c73b7532a') in 0.029205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.073.mat
+  artifactKey: Guid(6139d24ee8a11ce4b85448882f5c767d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.073.mat using Guid(6139d24ee8a11ce4b85448882f5c767d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ab5917daa19e0eeb5a4c784fe1527c') in 0.038829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.106.mat
+  artifactKey: Guid(b6f292871d3184b4782faf035bcc2bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.106.mat using Guid(b6f292871d3184b4782faf035bcc2bbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d5843677875612f5d34b73bde1e54ab') in 0.039939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/REACTOR TEXTURE _ COPPER.mat
+  artifactKey: Guid(13b03096fd9d25a4daea2e53e0cb794d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/REACTOR TEXTURE _ COPPER.mat using Guid(13b03096fd9d25a4daea2e53e0cb794d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e6007794c07f9bdc50c438fce602aa') in 0.035495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.098.mat
+  artifactKey: Guid(a08ee2adf2054174883c80d044ecaa05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.098.mat using Guid(a08ee2adf2054174883c80d044ecaa05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6926b5faaa4fe3b3bf8eb7eb35932d') in 0.035176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.102.mat
+  artifactKey: Guid(111b8b082eafaa44cb9332af51617c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.102.mat using Guid(111b8b082eafaa44cb9332af51617c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e7e00cbb5755c1360b24883051cb23') in 0.034033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.018.mat
+  artifactKey: Guid(af9ea91f8f31c8047bc0458d9d31de39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.018.mat using Guid(af9ea91f8f31c8047bc0458d9d31de39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d592b246a4a700ac4ce966cde814dda') in 0.028707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.043.mat
+  artifactKey: Guid(857631ed17811504795a8b8cd025792e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.043.mat using Guid(857631ed17811504795a8b8cd025792e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd80f4ed8945efa009be14b027e9280d') in 0.027575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.005.mat
+  artifactKey: Guid(b0f7b9ba5db4a984da1e54bad77905be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.005.mat using Guid(b0f7b9ba5db4a984da1e54bad77905be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e680e1f54f7f2ee0731df0d32b05bb52') in 0.027594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.032.mat
+  artifactKey: Guid(e094f09a9208cde4a99abeac11fe5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.032.mat using Guid(e094f09a9208cde4a99abeac11fe5dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253468f03e6fa0c4d1a6494830673319') in 0.025336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.095.mat
+  artifactKey: Guid(737f2f100d2c4504e9b5e1b84aa1cf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.095.mat using Guid(737f2f100d2c4504e9b5e1b84aa1cf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47c178b8c4c2a297ef4ac724e356c9c8') in 0.025572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.093.mat
+  artifactKey: Guid(cf773ef23aa232e478b8437c884670e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.093.mat using Guid(cf773ef23aa232e478b8437c884670e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b6327f8e62c267ca3cad3833cb09ac') in 0.026024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.052.mat
+  artifactKey: Guid(6fa9f010f37dd5346aacbda40e42a79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.052.mat using Guid(6fa9f010f37dd5346aacbda40e42a79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9520e1c4730fe59bba78a367cca4e243') in 0.035086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.081.mat
+  artifactKey: Guid(9d57d253f258e964e9454cec7661f1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.081.mat using Guid(9d57d253f258e964e9454cec7661f1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '180c169b5a97582673ad762f675b680a') in 0.022444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.048.mat
+  artifactKey: Guid(266e89d0ddea5634d9842adfe96a4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.048.mat using Guid(266e89d0ddea5634d9842adfe96a4ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686f80bf04ce2573317afb6471f0c1e7') in 0.026333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.100.mat
+  artifactKey: Guid(1ba5c3d6cff52874ca3ec2aebc5858eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.100.mat using Guid(1ba5c3d6cff52874ca3ec2aebc5858eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78ebda1ab953a746a4990a02dad4456') in 0.026172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/armor_TEXTURE.003.mat
+  artifactKey: Guid(9f79eb19cca31794ab17d4778a23171d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/armor_TEXTURE.003.mat using Guid(9f79eb19cca31794ab17d4778a23171d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28066ea466f628f46ec6aa360c1332b4') in 0.032567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.027.mat
+  artifactKey: Guid(d51fa601dd24f9b44ae664808e15def5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.027.mat using Guid(d51fa601dd24f9b44ae664808e15def5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131556df6be4121e7254fead4ccb85de') in 0.027019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/suspender_Texture.003.mat
+  artifactKey: Guid(49e2865f28793e74488a8013a296778e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/suspender_Texture.003.mat using Guid(49e2865f28793e74488a8013a296778e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bfa10709ad0be0a5e62937f15974d6') in 0.028090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.042.mat
+  artifactKey: Guid(8f6d004e2403f0843a19a2df5f91e809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.042.mat using Guid(8f6d004e2403f0843a19a2df5f91e809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e19b23fe8ab8206711dabbc9fd9d7c87') in 0.023089 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.037.mat
+  artifactKey: Guid(24f68a2174e83f849a3bcf74eed9fd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.037.mat using Guid(24f68a2174e83f849a3bcf74eed9fd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1866c8ee02e968bb05b2e309d19bdc52') in 0.019962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.096.mat
+  artifactKey: Guid(9d6fbcf5cc9963b40b7899ff04296643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.096.mat using Guid(9d6fbcf5cc9963b40b7899ff04296643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a014927e465caf5e8acce40f98632070') in 0.020218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.004.mat
+  artifactKey: Guid(1d156728025e9d847b243f0ccfeed55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.004.mat using Guid(1d156728025e9d847b243f0ccfeed55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f226474232dbbe14d58be6e993040a87') in 0.023104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.036.mat
+  artifactKey: Guid(378089f0d9a643448a9052731218c5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.036.mat using Guid(378089f0d9a643448a9052731218c5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422e63c642332c455e42e6e8eafdedb9') in 0.025230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/REACTOR TEXTURE _ COBALT.mat
+  artifactKey: Guid(419d12a2a963f934e8410114abec1f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/REACTOR TEXTURE _ COBALT.mat using Guid(419d12a2a963f934e8410114abec1f84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1975c02449fa4ff8edd77aa3ee36b9c') in 0.022666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.045.mat
+  artifactKey: Guid(54d5abb71b53fbf4ca38f3155839717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.045.mat using Guid(54d5abb71b53fbf4ca38f3155839717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd12fc35808f700b3f2f05001178353') in 0.024080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/LIGHT.mat
+  artifactKey: Guid(2031e47d219b3a740890a12c3048f19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/LIGHT.mat using Guid(2031e47d219b3a740890a12c3048f19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f79c9b0c5c26bdc7170511a4875eba') in 0.028093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.016.mat
+  artifactKey: Guid(e101f34407262984a81c98ee1018e350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.016.mat using Guid(e101f34407262984a81c98ee1018e350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beda2d775c4d7516dac1ba65bc99d2f6') in 0.026607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.010.mat
+  artifactKey: Guid(0bbea058325f4a34eb0a3dff58a6c402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.010.mat using Guid(0bbea058325f4a34eb0a3dff58a6c402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2dcd28efa7bab2686614eee33010297') in 0.022117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.097.mat
+  artifactKey: Guid(8cf2750033fd8f94cbf62ad902b67774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.097.mat using Guid(8cf2750033fd8f94cbf62ad902b67774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78a401638d8df428b34ede263069a8b') in 0.025845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.046.mat
+  artifactKey: Guid(3d36eb989ed247d4984611d126000cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.046.mat using Guid(3d36eb989ed247d4984611d126000cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fed70ee1ef124d5eee58c7cd161e45') in 0.033125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.017.mat
+  artifactKey: Guid(e7f856d11a057b348a6244fa16f6b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.017.mat using Guid(e7f856d11a057b348a6244fa16f6b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f467302672b6cfc68ec6fb47a7ca60c') in 0.021330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/UV_TEXT_WALL.mat
+  artifactKey: Guid(2914a1f7fd8822442a7d790d5f539106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/UV_TEXT_WALL.mat using Guid(2914a1f7fd8822442a7d790d5f539106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde1716249a2374848901d8ba694b5e4') in 0.025704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.104.mat
+  artifactKey: Guid(80559d67413c3d14b9667f8a233d32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.104.mat using Guid(80559d67413c3d14b9667f8a233d32e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4765f6833fe0c5c26c454ee446064f72') in 0.025353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.075.mat
+  artifactKey: Guid(05851aeb4f0a6644991b43f4e435a39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.075.mat using Guid(05851aeb4f0a6644991b43f4e435a39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b761e09f3855080b321d7b555c73d458') in 0.022910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.079.mat
+  artifactKey: Guid(ce94f99874f3b6447bcde8ff59ed5c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.079.mat using Guid(ce94f99874f3b6447bcde8ff59ed5c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e23476a60fe7c0ba70518cb6035287a') in 0.021925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.091.mat
+  artifactKey: Guid(6303dbc6360006e4493e37530b641b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.091.mat using Guid(6303dbc6360006e4493e37530b641b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187bf46b82ec248bc3135eea2b4b8d10') in 0.019626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.038.mat
+  artifactKey: Guid(f5ad36405c4ea0f42b7ebe7ae41282b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.038.mat using Guid(f5ad36405c4ea0f42b7ebe7ae41282b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0474dc94acaa2a563ec22b1df3445f26') in 0.017994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.029.mat
+  artifactKey: Guid(da72c0bfacc0a7f438fc5bea71fa89fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.029.mat using Guid(da72c0bfacc0a7f438fc5bea71fa89fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a9be00522c063bf410805b184b3583') in 0.017536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.006.mat
+  artifactKey: Guid(645d71baf5f75624abbff87cc096aff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.006.mat using Guid(645d71baf5f75624abbff87cc096aff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1219fff67961796cfe97fb930eb5d30d') in 0.017708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.103.mat
+  artifactKey: Guid(5bb098d589896774eb5e2b6d04448092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.103.mat using Guid(5bb098d589896774eb5e2b6d04448092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5601de3825e7dc255a4d2d2ea16521df') in 0.019360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.105.mat
+  artifactKey: Guid(63760125ed6a1fa4daa71e10f4a025e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.105.mat using Guid(63760125ed6a1fa4daa71e10f4a025e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845ab657e974d57383fb1a86550876b3') in 0.023073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.007.mat
+  artifactKey: Guid(dabed3f837148af4ea3bd0faf705a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.007.mat using Guid(dabed3f837148af4ea3bd0faf705a623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb81f92315849494e5dfb5f72e0e78f5') in 0.018391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.054.mat
+  artifactKey: Guid(65b79acd44b4ef144aaf7467c4920540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.054.mat using Guid(65b79acd44b4ef144aaf7467c4920540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932ec6060454521c5fd89e54cfdc3480') in 0.017073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.053.mat
+  artifactKey: Guid(a4ceabc6fe334284a96897dacf4d3640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.053.mat using Guid(a4ceabc6fe334284a96897dacf4d3640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a95e9553224a08b39edeeb8eb311b0e9') in 0.019795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Hair_TEXTRE.003.mat
+  artifactKey: Guid(83ff4b932fbf3f245b951eed342eea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Hair_TEXTRE.003.mat using Guid(83ff4b932fbf3f245b951eed342eea2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a73eb10ef6bd6c52c0532024306dd3') in 0.018150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.099.mat
+  artifactKey: Guid(0439ad5c1b20a67469c7fb15ade77faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.099.mat using Guid(0439ad5c1b20a67469c7fb15ade77faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06f495ecb44994b4b743676b9f658d0') in 0.019927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.101.mat
+  artifactKey: Guid(ad1975df3af1f354ead8b7d6e45b8ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.101.mat using Guid(ad1975df3af1f354ead8b7d6e45b8ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32734fff2005a73bacf316819a87a8c') in 0.033071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.070.mat
+  artifactKey: Guid(776977877d6e99f408106918407ab511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.070.mat using Guid(776977877d6e99f408106918407ab511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '465a3be84f41eb4d854a485bbcff008c') in 0.110033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Luva_TEXTURE.003.mat
+  artifactKey: Guid(4e7c1f75337b4af4392e3576684f3ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Luva_TEXTURE.003.mat using Guid(4e7c1f75337b4af4392e3576684f3ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 3.369407 seconds  code(4) message(Build asset version error: assets/testes/cena 5/cena5material/luva_texture.003.mat in SourceAssetDB has modification time of '2023-01-09T11:59:43.6568807Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff753fd284d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff753fd9529 (Unity) StackWalker::ShowCallstack
+0x00007ff754f49dc3 (Unity) GetStacktrace
+0x00007ff7552e5ff4 (Unity) GetAssetHashAndValidate
+0x00007ff7552e1558 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7552df52d (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff755266b4a (Unity) CreateAssetVersionBuilder
+0x00007ff75526d643 (Unity) ImportToObjects
+0x00007ff75526c373 (Unity) ImportAsset
+0x00007ff75528edb2 (Unity) AssetImportWorker::Import
+0x00007ff7552f57b4 (Unity) <lambda_9d91f4223b4733a7f58dbd02f611399e>::operator()
+0x00007ff7553369c2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7553228ae (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff755324514 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff755334dae (Unity) IOService::Run
+0x00007ff7553079bf (Unity) AssetImportWorkerClient::Run
+0x00007ff7552d18e3 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7552d196b (Unity) RunAssetImporterV2
+0x00007ff754af5188 (Unity) Application::InitializeProject
+0x00007ff754f54508 (Unity) WinMain
+0x00007ff7562e20ce (Unity) __scrt_common_main_seh
+0x00007ffdc19a7614 (KERNEL32) BaseThreadInitThunk
+0x00007ffdc2fc26a1 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/testes/cena 5/cena5material/luva_texture.003.mat in SourceAssetDB has modification time of '2023-01-09T11:59:43.6568807Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff753fd284d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff753fd9529 (Unity) StackWalker::ShowCallstack
+0x00007ff754f49dc3 (Unity) GetStacktrace
+0x00007ff7552e5ff4 (Unity) GetAssetHashAndValidate
+0x00007ff7552e1558 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7552df52d (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff755266b4a (Unity) CreateAssetVersionBuilder
+0x00007ff75526d643 (Unity) ImportToObjects
+0x00007ff75526c373 (Unity) ImportAsset
+0x00007ff75528edb2 (Unity) AssetImportWorker::Import
+0x00007ff7552f57b4 (Unity) <lambda_9d91f4223b4733a7f58dbd02f611399e>::operator()
+0x00007ff7553369c2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7553228ae (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff755324514 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff755334dae (Unity) IOService::Run
+0x00007ff7553079bf (Unity) AssetImportWorkerClient::Run
+0x00007ff7552d18e3 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7552d196b (Unity) RunAssetImporterV2
+0x00007ff754af5188 (Unity) Application::InitializeProject
+0x00007ff754f54508 (Unity) WinMain
+0x00007ff7562e20ce (Unity) __scrt_common_main_seh
+0x00007ffdc19a7614 (KERNEL32) BaseThreadInitThunk
+0x00007ffdc2fc26a1 (ntdll) RtlUserThreadStart
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Testes/Cena 5/Cena5Material/Material.002.mat
+  artifactKey: Guid(945e712d12d697246ad6fab88d4524f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/Cena5Material/Material.002.mat using Guid(945e712d12d697246ad6fab88d4524f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008171 seconds  code(4) message(Build asset version error: assets/testes/cena 5/cena5material/material.002.mat in SourceAssetDB has modification time of '2023-01-09T11:59:43.7078863Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff753fd284d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff753fd9529 (Unity) StackWalker::ShowCallstack
+0x00007ff754f49dc3 (Unity) GetStacktrace
+0x00007ff7552e5ff4 (Unity) GetAssetHashAndValidate
+0x00007ff7552e1558 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7552df52d (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff755266b4a (Unity) CreateAssetVersionBuilder
+0x00007ff75526d643 (Unity) ImportToObjects
+0x00007ff75526c373 (Unity) ImportAsset
+0x00007ff75528edb2 (Unity) AssetImportWorker::Import
+0x00007ff7552f57b4 (Unity) <lambda_9d91f4223b4733a7f58dbd02f611399e>::operator()
+0x00007ff7553369c2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7553228ae (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff755324514 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff755334dae (Unity) IOService::Run
+0x00007ff7553079bf (Unity) AssetImportWorkerClient::Run
+0x00007ff7552d18e3 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7552d196b (Unity) RunAssetImporterV2
+0x00007ff754af5188 (Unity) Application::InitializeProject
+0x00007ff754f54508 (Unity) WinMain
+0x00007ff7562e20ce (Unity) __scrt_common_main_seh
+0x00007ffdc19a7614 (KERNEL32) BaseThreadInitThunk
+0x00007ffdc2fc26a1 (ntdll) RtlUserThreadStart
+)
+  ERROR: Build asset version error: assets/testes/cena 5/cena5material/material.002.mat in SourceAssetDB has modification time of '2023-01-09T11:59:43.7078863Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff753fd284d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff753fd9529 (Unity) StackWalker::ShowCallstack
+0x00007ff754f49dc3 (Unity) GetStacktrace
+0x00007ff7552e5ff4 (Unity) GetAssetHashAndValidate
+0x00007ff7552e1558 (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff7552df52d (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff755266b4a (Unity) CreateAssetVersionBuilder
+0x00007ff75526d643 (Unity) ImportToObjects
+0x00007ff75526c373 (Unity) ImportAsset
+0x00007ff75528edb2 (Unity) AssetImportWorker::Import
+0x00007ff7552f57b4 (Unity) <lambda_9d91f4223b4733a7f58dbd02f611399e>::operator()
+0x00007ff7553369c2 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff7553228ae (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff755324514 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff755334dae (Unity) IOService::Run
+0x00007ff7553079bf (Unity) AssetImportWorkerClient::Run
+0x00007ff7552d18e3 (Unity) RunAssetImportWorkerClientV2
+0x00007ff7552d196b (Unity) RunAssetImporterV2
+0x00007ff754af5188 (Unity) Application::InitializeProject
+0x00007ff754f54508 (Unity) WinMain
+0x00007ff7562e20ce (Unity) __scrt_common_main_seh
+0x00007ffdc19a7614 (KERNEL32) BaseThreadInitThunk
+0x00007ffdc2fc26a1 (ntdll) RtlUserThreadStart
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: 
+  artifactKey: Guid(679a9a420adf33e4eb8d69870dd75ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing  using Guid(679a9a420adf33e4eb8d69870dd75ca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000485 seconds  code(3) message(Unknown asset with GUID '679a9a420adf33e4eb8d69870dd75ca5')
+  ERROR: Unknown asset with GUID '679a9a420adf33e4eb8d69870dd75ca5'
+========================================================================
+Received Import Request.
+  Time since last request: 7.542125 seconds.
+  path: Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx
+  artifactKey: Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Testes/Cena 5/TCP_II_FINAL REACTOR_TEXT.fbx using Guid(573f221c571dc054bb2933ec43945029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d1f6ceeaf2065d57bc81c0251c30db') in 1.197626 seconds 
