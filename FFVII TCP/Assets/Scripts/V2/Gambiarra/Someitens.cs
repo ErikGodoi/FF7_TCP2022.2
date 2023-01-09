@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Someitens : MonoBehaviour
 {
     // Faz intes ficarem invisiveis
-    Renderer render;
+    public Renderer render;
     Scene cena;
     private void Start()
     {
@@ -14,10 +14,15 @@ public class Someitens : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        cena.name = SceneManager.GetActiveScene().name;
-        if (cena.name == ("Batalha"))
+        if (SceneManager.GetSceneByName("Batalha").isLoaded)
         {
             render.enabled = false;
         }
+        else render.enabled = true;
+        /*cena.name = SceneManager.GetActiveScene().name;
+        if (cena.name == ("Batalha"))
+        {
+            render.enabled = false;
+        }*/
     }
 }

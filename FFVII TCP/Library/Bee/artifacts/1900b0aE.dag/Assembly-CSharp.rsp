@@ -376,6 +376,7 @@
 "Assets/Scripts/V2/EncontroV2.cs"
 "Assets/Scripts/V2/Eventos/Evento1.cs"
 "Assets/Scripts/V2/Gambiarra/Someitens.cs"
+"Assets/Scripts/V2/Gambiarra/TrocaCenaBatalha.cs"
 "Assets/Scripts/V2/GameManager.cs"
 "Assets/Scripts/V2/Mobs.cs"
 "Assets/Scripts/V2/SalvarPosicao.cs"

@@ -22,6 +22,7 @@ public class EncontroV2 : MonoBehaviour
 
     public Vector3[] spawnPosition;
     public GameObject MobPrefab1, MobPrefab2, MobPrefab3, MobPrefab4, MobPrefab5;
+    public GameObject Bossprefab;
 
     // Spawns por mapa
     public bool Sec1Map1, Sec1Map2, Sec1Map3;
@@ -307,9 +308,9 @@ public class EncontroV2 : MonoBehaviour
     IEnumerator SpawnBoss()
     {
         yield return new WaitForSeconds(0.01f);
-        Instantiate(MobPrefab1, spawnPosition[6], MobPrefab1.transform.rotation);
-        MobPrefab1.GetComponent<Mobs>().TudoFalso();
-        MobPrefab1.GetComponent<Mobs>().MobBoss = true;
+        Instantiate(Bossprefab, spawnPosition[6], Bossprefab.transform.rotation);
+        Bossprefab.GetComponent<Mobs>().TudoFalso();
+        Bossprefab.GetComponent<Mobs>().MobBoss = true;
     }
     public void Boss()
     {

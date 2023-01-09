@@ -14,6 +14,7 @@ public class Movimentação : MonoBehaviour
     public bool cena2Batalha;
     public bool cena3Batalha;
     public bool cena4Batalha;
+    public bool cena5Batalha;
     public bool podeEntrarEmBatalha;
     public float carregandoBatalha;
 
@@ -28,7 +29,8 @@ public class Movimentação : MonoBehaviour
     public bool emCombate;
 
     // Batalha Inicial
-    bool batalhaIntro = false;
+    public bool batalhaIntro = false;
+    public bool bossBattle = false;
     EncontroV2 batalha;
     void Start()
     {
@@ -59,21 +61,17 @@ public class Movimentação : MonoBehaviour
         cena3Batalha = false;
         cena4Batalha = false;
         Debug.Log(hit.gameObject.name);
-        if (hit.gameObject.name == ("PrerigoSec1Mapa1"))
-        {
-            //batalhaLayer = true;
-        }
         if (hit.gameObject.name == ("Cena2Batalha"))
         {
-            //cena2Batalha = true;
+            cena2Batalha = true;
         }
         if (hit.gameObject.name == ("CorredorReator"))
         {
-            //cena3Batalha = true;
+            cena3Batalha = true;
         }
         if (hit.gameObject.name == ("EntradaReator"))
         {
-            //cena4Batalha = true;
+            cena4Batalha = true;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -81,6 +79,7 @@ public class Movimentação : MonoBehaviour
         if (other.gameObject.name == ("TPCena2"))
         {
             SceneManager.LoadScene("Cena2");
+            batalhaIntro = false;
         }
         if (other.gameObject.name == ("TPCena3"))
         {
@@ -104,6 +103,18 @@ public class Movimentação : MonoBehaviour
             batalha.Sec1Map1 = true;
             batalha.SpawnPorMapa();
             batalha.Sec1Map1 = false;
+        }
+        if (other.gameObject.name == ("BossBattle") && bossBattle == false)
+        {
+            cena5Batalha = true;
+            bossBattle = true;
+            emCombate = true;
+            PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetFloat("Posicao.Y", transform.position.y);
+            SceneManager.LoadScene("Batalha");
+            batalha.Rec1Map5 = true;
+            batalha.SpawnPorMapa();
+            batalha.Rec1Map5 = false;
         }
     }
     void Move2()
