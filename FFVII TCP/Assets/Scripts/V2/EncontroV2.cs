@@ -8,15 +8,15 @@ public class EncontroV2 : MonoBehaviour
     GameManager gm;
     // Sector 1 map1 (Primeira Luta (Trem))             FEITO.
     public bool E2MPSec1Map1; 
-    // Sector 1 map2 (Plataforma)                       
+    // Sector 1 map2 (Plataforma)                       FEITO.
     public bool E2MPSec1Map2, E1GHSec1Map2, E1MP1GHSec1Map2;
     // Sector 1 map3 (Fora do Reator)                   FEITO.
     public bool E2MP1MDSec1Map3, E2MDSec1Map3, E2MPSec1Map3;
 
     // Reactor 1 map1 (Entrada)
-    bool E2GruntMap1, E3GruntMap1, E2Ray1GruntMap1, E3RayMap1;
+    bool E2GruntMap4, E3GruntMap4, E2Ray1GruntMap4, E3RayMap4;
     // Reactor 1 map4 (Cano Inferior)
-    bool E1SweeperMap4, E1Sweeper2GruntMap4;
+    bool E1SweeperMap5, E1Sweeper2GruntMap5;
     // Reactor 1 map5 (Boss Fight)
     bool BossFight;
 
@@ -39,12 +39,30 @@ public class EncontroV2 : MonoBehaviour
     {
         player = FindObjectOfType<CloudV2>();
     }
+    public void VariaveisDeSpawnFalsas()
+    {
+        E2MPSec1Map1 = false;
+        E2MPSec1Map2 = false;
+        E1GHSec1Map2 = false;
+        E1MP1GHSec1Map2 = false;
+        E2MP1MDSec1Map3 = false;
+        E2MDSec1Map3 = false;
+        E2MPSec1Map3 = false;
+        E2GruntMap4 = false;
+        E3GruntMap4 = false;
+        E2Ray1GruntMap4 = false;
+        E3RayMap4 = false;
+        E1SweeperMap5 = false;
+        E1Sweeper2GruntMap5 = false;
+        BossFight = false;
+    }
     public void SpawnPorMapa()
     {
         if (Sec1Map1 == true)
         {
             E2MPSec1Map1 = true;
             SpawnarInimigosSec1();
+            VariaveisDeSpawnFalsas();
         }
         if (Sec1Map2 == true)
         {
@@ -53,6 +71,7 @@ public class EncontroV2 : MonoBehaviour
             if (Aleatoriedade == 2) E1GHSec1Map2 = true;
             if (Aleatoriedade == 3) E1MP1GHSec1Map2 = true;
             SpawnarInimigosSec1();
+            VariaveisDeSpawnFalsas();
         }
         if (Sec1Map3 == true)
         {
@@ -61,27 +80,31 @@ public class EncontroV2 : MonoBehaviour
             if (Aleatoriedade == 2) E2MDSec1Map3 = true;
             if (Aleatoriedade == 3) E2MPSec1Map3 = true;
             SpawnarInimigosSec1();
+            VariaveisDeSpawnFalsas();
         }
         if (Rec1Map1 == true)
         {
             Aleatoriedade = Random.Range(1, 5);
-            if (Aleatoriedade == 1) E2GruntMap1 = true;
-            if (Aleatoriedade == 2) E3GruntMap1 = true;
-            if (Aleatoriedade == 3) E2Ray1GruntMap1 = true;
-            if (Aleatoriedade == 4) E3RayMap1 = true;
+            if (Aleatoriedade == 1) E2GruntMap4 = true;
+            if (Aleatoriedade == 2) E3GruntMap4 = true;
+            if (Aleatoriedade == 3) E2Ray1GruntMap4 = true;
+            if (Aleatoriedade == 4) E3RayMap4 = true;
             SpawnarInimigosRec1();
+            VariaveisDeSpawnFalsas();
         }
         if (Rec1Map4 == true)
         {
             Aleatoriedade = Random.Range(1, 3);
-            if (Aleatoriedade == 1) E1SweeperMap4 = true;
-            if (Aleatoriedade == 2) E1Sweeper2GruntMap4 = true;
+            if (Aleatoriedade == 1) E1SweeperMap5 = true;
+            if (Aleatoriedade == 2) E1Sweeper2GruntMap5 = true;
             SpawnarInimigosRec1();
+            VariaveisDeSpawnFalsas();
         }
         if (Rec1Map5 == true)
         {
             BossFight = true;
             Boss();
+            VariaveisDeSpawnFalsas();
         }
     }
     IEnumerator SpawnCena1()
@@ -247,28 +270,28 @@ public class EncontroV2 : MonoBehaviour
     public void SpawnarInimigosRec1()
     {
         // Rec 1 map1
-        if (E2GruntMap1)
+        if (E2GruntMap4)
         {
             StartCoroutine(SpawnCena4encontro1());
         }
-        if (E3GruntMap1)
+        if (E3GruntMap4)
         {
             StartCoroutine(SpawnCena4encontro2());
         }
-        if (E2Ray1GruntMap1)
+        if (E2Ray1GruntMap4)
         {
             StartCoroutine(SpawnCena4encontro3());
         }
-        if (E3RayMap1)
+        if (E3RayMap4)
         {
             StartCoroutine(SpawnCena4encontro4());
         }
         // Rec 1 map4
-        if (E1SweeperMap4)
+        if (E1SweeperMap5)
         {
             StartCoroutine(SpawnCena5encontro1());
         }
-        if (E1Sweeper2GruntMap4)
+        if (E1Sweeper2GruntMap5)
         {
             StartCoroutine(SpawnCena5encontro2());
         }

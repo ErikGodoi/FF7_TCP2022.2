@@ -11,6 +11,7 @@ public class Movimentação : MonoBehaviour
     // sistema de encontro aleatório
     public LayerMask prerigoLayer;
     public bool batalhaLayer;
+    public bool cena2Batalha;
     public bool cena3Batalha;
     public bool cena4Batalha;
     public bool podeEntrarEmBatalha;
@@ -26,15 +27,11 @@ public class Movimentação : MonoBehaviour
     // Cenas
     public bool emCombate;
 
-    // teste
-    CarregadorDeCena mudaCena;
-
     // Batalha Inicial
     bool batalhaIntro = false;
     EncontroV2 batalha;
     void Start()
     {
-        mudaCena = FindObjectOfType<CarregadorDeCena>();
         gm = FindObjectOfType<GameManager>();
         emCombate = false;
         controle = gameObject.GetComponent<CharacterController>();
@@ -47,6 +44,10 @@ public class Movimentação : MonoBehaviour
             Move2();
             EntrarEmBatalha();
         }
+        if (emCombate == true)
+        {
+            transform.position = new Vector3(transform.position.x, PlayerPrefs.GetFloat("Posicao.Y"), transform.position.z);
+        }
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             transform.position = new Vector3(40, -4, 12);
@@ -58,6 +59,10 @@ public class Movimentação : MonoBehaviour
         if (hit.gameObject.name == ("PrerigoSec1Mapa1"))
         {
             batalhaLayer = true;
+        }
+        if (hit.gameObject.name == ("Cena2Batalha"))
+        {
+            cena2Batalha = true;
         }
         if (hit.gameObject.name == ("CorredorReator"))
         {
@@ -95,6 +100,7 @@ public class Movimentação : MonoBehaviour
         {
             batalhaIntro = true;
             emCombate = true;
+            PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("Batalha");
             batalha.Sec1Map1 = true;
             batalha.SpawnPorMapa();
@@ -119,6 +125,11 @@ public class Movimentação : MonoBehaviour
     }
     void EntrarEmBatalha()
     {
+        // Cena 2
+        if (cena2Batalha == true)
+        {
+            carregandoBatalha += 0.025f;
+        }
         // Cena 3
         if (cena3Batalha == true)
         {
@@ -143,11 +154,24 @@ public class Movimentação : MonoBehaviour
         {
             podeEntrarEmBatalha = false;
         }
+        if (podeEntrarEmBatalha == true && cena2Batalha == true)
+        {
+            emCombate = true;
+            carregandoBatalha = 0;
+            PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetFloat("Posicao.Y", transform.position.y);
+            SceneManager.LoadScene("Batalha");
+            batalha.Sec1Map2 = true;
+            batalha.SpawnPorMapa();
+            batalha.Sec1Map2 = false;
+        }
         if (podeEntrarEmBatalha == true && cena3Batalha == true)
         {
             Debug.Log("Entrou em batalha na cena 3");
             emCombate = true;
             carregandoBatalha = 0;
+            PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetFloat("Posicao.Y", transform.position.y);
             SceneManager.LoadScene("Batalha");
             batalha.Sec1Map3 = true;
             batalha.SpawnPorMapa();
@@ -157,6 +181,8 @@ public class Movimentação : MonoBehaviour
         {
             emCombate = true;
             carregandoBatalha = 0;
+            PlayerPrefs.SetInt("UltimaCena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetFloat("Posicao.Y", transform.position.y);
             SceneManager.LoadScene("Batalha");
             batalha.Rec1Map1 = true;
             batalha.SpawnPorMapa();

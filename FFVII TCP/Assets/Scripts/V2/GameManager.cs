@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         mobsVivos = GameObject.FindGameObjectsWithTag("Inimigos");
         if (mobsVivos.Length == 0)
         {
-            SceneManager.LoadScene(UltimaCena.UltimoLevel);
+            SceneManager.LoadScene(PlayerPrefs.GetInt("UltimaCena"));
             move.emCombate = false;
         }
     }
