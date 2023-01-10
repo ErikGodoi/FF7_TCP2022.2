@@ -328,37 +328,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5957135321176594176, guid: 163de73feb10eb540ac33e602b24f554, type: 3}
   m_PrefabInstance: {fileID: 5957135321588934685}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1784352082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1784352084}
-  m_Layer: 0
-  m_Name: ManagerDeCena
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1784352084
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784352082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919937552
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,14 +470,14 @@ MonoBehaviour:
   - {x: 13, y: 2.3, z: 0}
   - {x: 13, y: 2.3, z: 1.5}
   - {x: 13, y: 2.3, z: -1.5}
-  - {x: 16, y: 3, z: 0}
+  - {x: 10, y: 3.9, z: 0}
   - {x: 10, y: 2.3, z: 0}
-  MobPrefab1: {fileID: 5186896990101273756, guid: e9eeae3d28c291445a1fe0d18bd940b8, type: 3}
-  MobPrefab2: {fileID: 5186896990101273756, guid: e9eeae3d28c291445a1fe0d18bd940b8, type: 3}
-  MobPrefab3: {fileID: 5186896990101273756, guid: e9eeae3d28c291445a1fe0d18bd940b8, type: 3}
-  MobPrefab4: {fileID: 5186896990101273756, guid: e9eeae3d28c291445a1fe0d18bd940b8, type: 3}
-  MobPrefab5: {fileID: 5186896990101273756, guid: e9eeae3d28c291445a1fe0d18bd940b8, type: 3}
-  Bossprefab: {fileID: 8776296349221391713, guid: 578dc1080b23601449611c2410775f89, type: 3}
+  MobPrefab1: {fileID: 2896746533915176029, guid: 63dc06a3e36cbe340a4c09747a20d71d, type: 3}
+  MobPrefab2: {fileID: 2896746533915176029, guid: 63dc06a3e36cbe340a4c09747a20d71d, type: 3}
+  MobPrefab3: {fileID: 2896746533915176029, guid: 63dc06a3e36cbe340a4c09747a20d71d, type: 3}
+  MobPrefab4: {fileID: 2896746533915176029, guid: 63dc06a3e36cbe340a4c09747a20d71d, type: 3}
+  MobPrefab5: {fileID: 2896746533915176029, guid: 63dc06a3e36cbe340a4c09747a20d71d, type: 3}
+  Bossprefab: {fileID: 3679814797144750846, guid: 6a8baf39ba10f4e4d8a7d5f96ba8649b, type: 3}
   Sec1Map1: 0
   Sec1Map2: 0
   Sec1Map3: 0

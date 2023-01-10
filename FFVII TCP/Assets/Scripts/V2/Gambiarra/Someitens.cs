@@ -18,6 +18,10 @@ public class Someitens : MonoBehaviour
         {
             claudio.SetActive(false);
         }
+        else if (SceneManager.GetSceneByName("FimDeJogo").isLoaded)
+        {
+            claudio.SetActive(false);
+        }
         else claudio.SetActive(true);
         /*cena.name = SceneManager.GetActiveScene().name;
         if (cena.name == ("Batalha"))

@@ -70,7 +70,7 @@
     <Compile Include="Assets\Scripts\V1\Batalha\MOBS\MOBMP.cs" />
     <Compile Include="Assets\Scripts\V2\CarregadorDeCena.cs" />
     <Compile Include="Assets\Scripts\V2\CloudStatus.cs" />
-    <Compile Include="Assets\Scripts\V2\BossScript.cs" />
+    <Compile Include="Assets\Scripts\V2\PerdeuMane.cs" />
     <Compile Include="Assets\Scenes\menu naomi\menuprincipal.cs" />
     <Compile Include="Assets\Scripts\V1\Global\EncontroAleatorio.cs" />
     <Compile Include="Assets\Scripts\V2\BarretV2.cs" />
@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\V2\GameManager.cs" />
     <Compile Include="Assets\Scripts\V2\Gambiarra\TrocaCenaBatalha.cs" />
     <Compile Include="Assets\Scripts\V2\EncontroV2.cs" />
+    <Compile Include="Assets\Scripts\V2\Gambiarra\InimigosAnimacao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

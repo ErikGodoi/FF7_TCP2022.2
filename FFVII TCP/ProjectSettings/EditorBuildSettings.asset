@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena5.unity
     guid: 940db3ba8884d1549a32a9010013afa1
+  - enabled: 1
+    path: Assets/Scenes/FimDeJogo.unity
+    guid: 45ee1bebf52ab9a4b98c1d375ab5a357
   m_configObjects: {}

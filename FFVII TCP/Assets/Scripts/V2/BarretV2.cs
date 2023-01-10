@@ -51,6 +51,7 @@ public class BarretV2 : MonoBehaviour
         {
             BarretTurno();
         }
+        if (bStatus.bHp < 0) bStatus.bHp = 0;
     }
     public void StatusHUD()
     {

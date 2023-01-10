@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Mobs : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class Mobs : MonoBehaviour
     CloudStatus cloudStatus;
     BarretV2 player2;
     BarretStatus barretStatus;
+    public InimigosAnimacao animacaoInimigos;
+    int AniRandom;
 
     public bool atacando;
 
@@ -210,6 +213,10 @@ public class Mobs : MonoBehaviour
     public void MobVida(float vida)
     {
         hp -= (vida + def);
+        if (gameObject.name.Contains("Boss") && hp <= 0)
+        {
+            SceneManager.LoadScene("FimDeJogo");
+        }
         if (hp <= 0)
         {
             MobMorre();
@@ -258,43 +265,71 @@ public class Mobs : MonoBehaviour
     public void MobAtaca()
     {
         atacando = true;
-        dano = attack + ((attack + level / 32) * (attack * level / 32));
+        Debug.Log(AniRandom);
         if (alvo == 0)
         {
             if (gameObject.name.Contains("Boss"))
             {
+                dano = attack + (((attack + level / 32) * (attack * level / 32))) / 3;
+                AniRandom = Random.Range(1, 3);
+                if (AniRandom == 1)
+                {
+                    animacaoInimigos.Animacao1();
+                    AniRandom = 0;
+                }
+                if (AniRandom == 2)
+                {
+                    animacaoInimigos.Animacao2();
+                    AniRandom = 0;
+                }
                 player1.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3.9f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
             else
             {
+                dano = attack + ((attack + level / 32) * (attack * level / 32));
+                animacaoInimigos.Animacao1();
                 player1.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
         }
         if (alvo == 1)
         {
             if (gameObject.name.Contains("Boss"))
             {
-                player1.TomarDanoFisico(dano);
+                dano = (attack + ((attack + level / 32) * (attack * level / 32))) / 3;
+                AniRandom = Random.Range(1, 3);
+                if (AniRandom == 1)
+                {
+                    animacaoInimigos.Animacao1();
+                    AniRandom = 0;
+                }
+                if (AniRandom == 2)
+                {
+                    animacaoInimigos.Animacao2();
+                    AniRandom = 0;
+                }
+                player2.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3.9f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
             else
             {
+                dano = attack + ((attack + level / 32) * (attack * level / 32));
+                animacaoInimigos.Animacao1();
                 player2.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
         }
     }
@@ -305,38 +340,62 @@ public class Mobs : MonoBehaviour
         {
             if (gameObject.name.Contains("Boss"))
             {
+                AniRandom = Random.Range(1, 3);
+                if (AniRandom == 1)
+                {
+                    animacaoInimigos.Animacao1();
+                    AniRandom = 0;
+                }
+                if (AniRandom == 2)
+                {
+                    animacaoInimigos.Animacao2();
+                    AniRandom = 0;
+                }
                 player1.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3.9f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
             else
             {
+                animacaoInimigos.Animacao1();
                 player1.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
         }
         if (alvo == 1)
         {
             if (gameObject.name.Contains("Boss"))
             {
-                player1.TomarDanoFisico(dano);
+                AniRandom = Random.Range(1, 3);
+                if (AniRandom == 1)
+                {
+                    animacaoInimigos.Animacao1();
+                    AniRandom = 0;
+                }
+                if (AniRandom == 2)
+                {
+                    animacaoInimigos.Animacao2();
+                    AniRandom = 0;
+                }
+                player2.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3.9f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
             else
             {
+                animacaoInimigos.Animacao1();
                 player2.TomarDanoFisico(dano);
                 turno = 0;
                 alvo = -1;
                 transform.position = new Vector3(0f, 3f, 0f);
-                tempoDeAtaque = 0.6f;
+                tempoDeAtaque = 1f;
             }
         }
     }

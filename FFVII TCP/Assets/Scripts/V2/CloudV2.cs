@@ -34,14 +34,12 @@ public class CloudV2 : MonoBehaviour
     public GameObject[] botaoGelo;
     public GameObject[] botaoRaio;
     public Mobs[] inimigo;
-    public BossScript bossScript;
     [SerializeField] Animator ani;
 
     // Defesa
     bool defendendo;
 
-    // Teste de vida
-    int hpEmInt;
+
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -60,6 +58,7 @@ public class CloudV2 : MonoBehaviour
         {
             CloudTurno();
         }
+        if (cStatus.cHp < 0) cStatus.cHp = 0;
     }
     public void StatusHUD()
     {

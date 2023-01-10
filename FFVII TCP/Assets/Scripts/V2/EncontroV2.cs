@@ -301,7 +301,7 @@ public class EncontroV2 : MonoBehaviour
     IEnumerator SpawnBoss()
     {
         yield return new WaitForSeconds(0.01f);
-        Instantiate(Bossprefab, spawnPosition[6], Bossprefab.transform.rotation);
+        Instantiate(Bossprefab, spawnPosition[5], Bossprefab.transform.rotation);
         Bossprefab.GetComponent<Mobs>().MobBoss = true;
     }
     public void Boss()
