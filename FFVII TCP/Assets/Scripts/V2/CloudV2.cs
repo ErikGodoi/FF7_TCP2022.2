@@ -34,11 +34,11 @@ public class CloudV2 : MonoBehaviour
     public GameObject[] botaoGelo;
     public GameObject[] botaoRaio;
     public Mobs[] inimigo;
+    public BossScript bossScript;
+    [SerializeField] Animator ani;
 
     // Defesa
     bool defendendo;
-
-    public bool spawnou;
 
     // Teste de vida
     int hpEmInt;
@@ -51,10 +51,6 @@ public class CloudV2 : MonoBehaviour
     }
     private void Update()
     {
-        if (spawnou == true)
-        {
-            gm.VerificacaoDeVitoria();
-        }
         cenaAtual = SceneManager.GetSceneByName("Batalha").isLoaded;
         if (cenaAtual == true)
         {
@@ -110,7 +106,7 @@ public class CloudV2 : MonoBehaviour
     {
         if (turno < 100)
         {
-            turno += Time.deltaTime * 50f;
+            turno += Time.deltaTime * 100f;
         }
         if (turno >= 100)
         {
@@ -159,7 +155,7 @@ public class CloudV2 : MonoBehaviour
     }
     public void CloudDanoFisico()
     {
-        
+        ani.SetTrigger("ATTACK");
         if (botaoMob1.gameObject.name == "MobP1C")
         {
             inimigo[0].MobVida(cStatus.cDano);

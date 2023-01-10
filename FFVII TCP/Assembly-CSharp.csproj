@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\V2\Mobs.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\Inventario\Inventario.cs" />
+    <Compile Include="Assets\Scripts\V2\Gambiarra\UltimaCena.cs" />
     <Compile Include="Assets\Scripts\V1\Global\CamPersistente.cs" />
     <Compile Include="Assets\Scripts\V2\Eventos\Evento1.cs" />
     <Compile Include="Assets\Scripts\V2\SalvarPosicao.cs" />
@@ -69,6 +70,8 @@
     <Compile Include="Assets\Scripts\V1\Batalha\MOBS\MOBMP.cs" />
     <Compile Include="Assets\Scripts\V2\CarregadorDeCena.cs" />
     <Compile Include="Assets\Scripts\V2\CloudStatus.cs" />
+    <Compile Include="Assets\Scripts\V2\BossScript.cs" />
+    <Compile Include="Assets\Scenes\menu naomi\menuprincipal.cs" />
     <Compile Include="Assets\Scripts\V1\Global\EncontroAleatorio.cs" />
     <Compile Include="Assets\Scripts\V2\BarretV2.cs" />
     <Compile Include="Assets\Scripts\V2\BarretStatus.cs" />

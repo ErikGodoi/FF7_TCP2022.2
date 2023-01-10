@@ -7,7 +7,6 @@ public class Evento1 : MonoBehaviour
     public GameObject portaoE, portaoD;
 
     public bool ativaEvento;
-    float portaoMax = 30f;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == ("Player"))

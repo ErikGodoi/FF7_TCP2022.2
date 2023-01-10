@@ -334,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 204957668972774553, guid: ee42cfce13b0a9f4587893e7c4e87ee3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.67
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 204957668972774553, guid: ee42cfce13b0a9f4587893e7c4e87ee3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -373,6 +373,10 @@ PrefabInstance:
       value: Leo_Sala_de_maquinas_Godoi_Review_06
       objectReference: {fileID: 0}
     - target: {fileID: 690167045382020643, guid: ee42cfce13b0a9f4587893e7c4e87ee3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591838119610308994, guid: ee42cfce13b0a9f4587893e7c4e87ee3, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1003,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6618923745486710776, guid: 5e6d344f997ea3546beeacc3a0f81647, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 6618923745486710776, guid: 5e6d344f997ea3546beeacc3a0f81647, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1164,9 +1168,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CloudStatus, Assembly-CSharp
-        m_MethodName: CloudAcao5
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: BarretDanoFisico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1412,75 +1416,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334053071}
   m_CullTransparentMesh: 1
---- !u!1001 &356199797
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 935027373}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b8240b313fc447648b248af8281540fe, type: 3}
-      propertyPath: m_Name
-      value: Cloud1_067
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8240b313fc447648b248af8281540fe, type: 3}
 --- !u!1 &360588334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,7 +2471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1026519841788298833, guid: c4024909534775d42ad2460fc46eb014, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1026519841788298833, guid: c4024909534775d42ad2460fc46eb014, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2746,7 +2681,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   inimigo: []
-  spawnou: 0
+  ani: {fileID: 1174010326}
 --- !u!1 &657609608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,7 +3402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1516631667900786051, guid: ef15a2a469307604f8e9cf27ab97560f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -9.7
       objectReference: {fileID: 0}
     - target: {fileID: 1516631667900786051, guid: ef15a2a469307604f8e9cf27ab97560f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3793,9 +3728,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CloudStatus, Assembly-CSharp
-        m_MethodName: CloudAcao3
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: BarretDanoFisico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4098,6 +4033,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852276646}
   m_CullTransparentMesh: 1
+--- !u!1001 &869789808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1245719351}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_Name
+      value: Barret
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 45cd72c17cb52154fbe5200448e24565, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+--- !u!95 &869789809 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: c4dd3f625cd2df949a43494076e97c54, type: 3}
+  m_PrefabInstance: {fileID: 869789808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &933053254
 GameObject:
   m_ObjectHideFlags: 0
@@ -4195,7 +4208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2075222838448513527, guid: 93b5d923a30237f40a312d9dc52e30e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -17.5
       objectReference: {fileID: 0}
     - target: {fileID: 2075222838448513527, guid: 93b5d923a30237f40a312d9dc52e30e8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4203,7 +4216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2075222838448513527, guid: 93b5d923a30237f40a312d9dc52e30e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2075222838448513527, guid: 93b5d923a30237f40a312d9dc52e30e8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5047,6 +5060,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166673905}
   m_CullTransparentMesh: 1
+--- !u!1001 &1174010325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 935027373}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_Name
+      value: Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 25d95e4f0a94b53478a7d38485bd81b5, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+--- !u!95 &1174010326 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 029751c13a5a47949af29c103c2dfe3c, type: 3}
+  m_PrefabInstance: {fileID: 1174010325}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1184724438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,7 +5246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191912919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5450,7 +5541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8213783686951805105, guid: b7ca744909696124594095e5b67d763b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -17.5
       objectReference: {fileID: 0}
     - target: {fileID: 8213783686951805105, guid: b7ca744909696124594095e5b67d763b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5458,7 +5549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8213783686951805105, guid: b7ca744909696124594095e5b67d763b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8213783686951805105, guid: b7ca744909696124594095e5b67d763b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5490,10 +5581,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8213783686951805107, guid: b7ca744909696124594095e5b67d763b, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7ca744909696124594095e5b67d763b, type: 3}
+--- !u!4 &1245719351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8213783686951805105, guid: b7ca744909696124594095e5b67d763b, type: 3}
+  m_PrefabInstance: {fileID: 1245719350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1268940406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6182,6 +6278,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   inimigo: []
+  ani: {fileID: 869789809}
 --- !u!1001 &1356758513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6215,7 +6312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1950627195691995466, guid: 3d04737318652fa4987962855d028e62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 1950627195691995466, guid: 3d04737318652fa4987962855d028e62, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6485,9 +6582,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1352113532}
-        m_TargetAssemblyTypeName: CloudV2, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: Defendendo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6618,9 +6715,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CloudStatus, Assembly-CSharp
-        m_MethodName: CloudAcao2
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: BarretDanoFisico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6805,6 +6902,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439201520}
   m_CullTransparentMesh: 1
+--- !u!1 &1441729169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441729170}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441729170
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441729169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10, y: 3, z: -2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449244904
 GameObject:
   m_ObjectHideFlags: 0
@@ -7559,9 +7687,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1352113532}
-        m_TargetAssemblyTypeName: CloudV2, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: AcaoDeAtaque
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8015,9 +8143,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CloudStatus, Assembly-CSharp
-        m_MethodName: CloudAcao4
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: BarretDanoFisico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8667,7 +8795,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 615873909}
         m_TargetAssemblyTypeName: CloudV2, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Defendendo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8808,7 +8936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1749458577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10276,9 +10404,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CloudStatus, Assembly-CSharp
-        m_MethodName: CloudAcao
+      - m_Target: {fileID: 1352113537}
+        m_TargetAssemblyTypeName: BarretV2, Assembly-CSharp
+        m_MethodName: BarretDanoFisico
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10571,7 +10699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2077476789
 RectTransform:
   m_ObjectHideFlags: 0

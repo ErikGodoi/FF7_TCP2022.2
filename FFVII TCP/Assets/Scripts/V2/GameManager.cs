@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     Movimentação move;
     EncontroV2 spawnScript;
 
+    bool vitoria;
     void Awake()
     {
         if (instancia == null)
@@ -31,26 +32,24 @@ public class GameManager : MonoBehaviour
         move = FindObjectOfType<Movimentação>();
         spawnScript = FindObjectOfType<EncontroV2>();
     }
-    IEnumerator ChecagemDeInimigos()
-    {
-        yield return new WaitForSeconds(0.05f);
-        VerificacaoDeVitoria();
-    }
     private void Update()
     {
         if (SceneManager.GetSceneByName("Batalha").isLoaded)
-        {
-            StartCoroutine(ChecagemDeInimigos());
-        }
+            mobsVivos = GameObject.FindGameObjectsWithTag("Inimigos");
     }
-    public void VerificacaoDeVitoria()
+    IEnumerator Espera()
     {
-        mobsVivos = GameObject.FindGameObjectsWithTag("Inimigos");
+        yield return new WaitForSeconds(1);
         if (mobsVivos.Length == 0)
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("UltimaCena"));
             spawnScript.Aleatoriedade = 0;
             move.emCombate = false;
         }
+    }
+    public void VerificacaoDeVitoria()
+    {
+        mobsVivos = GameObject.FindGameObjectsWithTag("Inimigos");
+        StartCoroutine(Espera());
     }
 }

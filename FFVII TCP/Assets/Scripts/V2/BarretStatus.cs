@@ -7,6 +7,8 @@ public class BarretStatus : MonoBehaviour
     public static BarretStatus instancia = null;
     // BARRET STATUS
     public string bNome;
+    public int bEXP;
+    public int bEXPMax;
     public float bLevel;
     public float bHp, bHpMax;
     public float bMp, bMpMax;
@@ -26,7 +28,6 @@ public class BarretStatus : MonoBehaviour
     public float bDefense;
     public float bMagicAttack;
     public float bMagicDefense;
-    // FIM DO STATUS DO BARRET
     void Awake()
     {
         if (instancia == null)
@@ -47,6 +48,7 @@ public class BarretStatus : MonoBehaviour
     {
         bNome = "Barret";
         bLevel = 6;
+        bEXPMax = 300;
 
         bHpMax = 312;
         bMpMax = 44;
@@ -67,9 +69,18 @@ public class BarretStatus : MonoBehaviour
         bHp = bHpMax;
         bMp = bMpMax;
     }
+    private void Update()
+    {
+        if (bEXP >= bEXPMax)
+        {
+            BarretLevelUP();
+        }
+    }
     public void BarretLevelUP()
     {
         bLevel += 1;
+        bEXPMax += 150;
+        bEXP = 0;
 
         bHpMax += 100;
         bMpMax += 50;

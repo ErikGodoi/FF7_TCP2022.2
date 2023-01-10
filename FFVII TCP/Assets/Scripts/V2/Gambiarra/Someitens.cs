@@ -6,19 +6,19 @@ using UnityEngine.SceneManagement;
 public class Someitens : MonoBehaviour
 {
     // Faz intes ficarem invisiveis
-    public Renderer render;
+    public GameObject claudio;
     Scene cena;
     private void Start()
     {
-        render = GetComponent<Renderer>();
+        claudio = GetComponentInChildren<GameObject>();
     }
     private void FixedUpdate()
     {
         if (SceneManager.GetSceneByName("Batalha").isLoaded)
         {
-            render.enabled = false;
+            claudio.SetActive(false);
         }
-        else render.enabled = true;
+        else claudio.SetActive(true);
         /*cena.name = SceneManager.GetActiveScene().name;
         if (cena.name == ("Batalha"))
         {

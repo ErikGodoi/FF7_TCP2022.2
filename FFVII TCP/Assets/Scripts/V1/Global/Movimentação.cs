@@ -32,6 +32,7 @@ public class Movimentação : MonoBehaviour
     public bool batalhaIntro = false;
     public bool bossBattle = false;
     EncontroV2 batalha;
+    [SerializeField] Animator ani;
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -63,15 +64,15 @@ public class Movimentação : MonoBehaviour
         Debug.Log(hit.gameObject.name);
         if (hit.gameObject.name == ("Cena2Batalha"))
         {
-            cena2Batalha = true;
+            //cena2Batalha = true;
         }
         if (hit.gameObject.name == ("CorredorReator"))
         {
-            cena3Batalha = true;
+            //cena3Batalha = true;
         }
         if (hit.gameObject.name == ("EntradaReator"))
         {
-            cena4Batalha = true;
+            //cena4Batalha = true;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -119,6 +120,11 @@ public class Movimentação : MonoBehaviour
     }
     void Move2()
     {
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            ani.SetBool("Correndo", true);
+        }
+        else ani.SetBool("Correndo", false);
         float speed = 6f;
         float gravity = 20f;
         Vector3 moveDirection = Vector3.zero;

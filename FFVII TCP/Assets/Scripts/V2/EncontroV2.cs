@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EncontroV2 : MonoBehaviour
 {
-    // GAMEMANAGER
-    GameManager gm;
     // Sector 1 map1 (Primeira Luta (Trem))             FEITO.
     public bool E2MPSec1Map1; 
     // Sector 1 map2 (Plataforma)                       FEITO.
@@ -32,10 +30,6 @@ public class EncontroV2 : MonoBehaviour
     public int Aleatoriedade;
 
     public CloudV2 player;
-    private void Start()
-    {
-        gm = FindObjectOfType<GameManager>();
-    }
     private void Update()
     {
         player = FindObjectOfType<CloudV2>();
@@ -125,7 +119,6 @@ public class EncontroV2 : MonoBehaviour
         Instantiate(MobPrefab2, spawnPosition[1], MobPrefab2.transform.rotation);
         MobPrefab2.GetComponent<Mobs>().TudoFalso();
         MobPrefab2.GetComponent<Mobs>().MobMP = true;
-        player.spawnou = true;
     }
     IEnumerator SpawnCena2encontro2()
     {
@@ -309,7 +302,6 @@ public class EncontroV2 : MonoBehaviour
     {
         yield return new WaitForSeconds(0.01f);
         Instantiate(Bossprefab, spawnPosition[6], Bossprefab.transform.rotation);
-        Bossprefab.GetComponent<Mobs>().TudoFalso();
         Bossprefab.GetComponent<Mobs>().MobBoss = true;
     }
     public void Boss()

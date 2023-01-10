@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 0
   hpMax: 0
-  MobMP: 1
+  MobMP: 0
   MobGH: 0
   MobMD: 0
   MobGr: 0
@@ -126,3 +126,5 @@ MonoBehaviour:
   atacando: 0
   outrosMobs: []
   outrosMobsScript: []
+  fIce: 0
+  fBolt: 0

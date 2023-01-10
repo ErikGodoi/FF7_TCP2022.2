@@ -29,11 +29,10 @@ public class BarretV2 : MonoBehaviour
     public bool cenaAtual;
     public GameObject[] botaoMob;
     public Mobs[] inimigo;
+    [SerializeField] Animator ani;
 
     // Defesa
     bool defendendo;
-
-    bool spawnou;
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -43,10 +42,6 @@ public class BarretV2 : MonoBehaviour
     }
     private void Update()
     {
-        if (spawnou == true)
-        {
-            gm.VerificacaoDeVitoria();
-        }
         cenaAtual = SceneManager.GetSceneByName("Batalha").isLoaded;
         if (cenaAtual == true)
         {
@@ -89,11 +84,12 @@ public class BarretV2 : MonoBehaviour
     {
         if (turno < 100)
         {
-            turno += Time.deltaTime * 5;
+            turno += Time.deltaTime * 10f;
         }
         if (turno >= 100)
         {
             painelDeAcaoB.SetActive(true);
+            defendendo = false;
         }
         else
         {
@@ -134,31 +130,32 @@ public class BarretV2 : MonoBehaviour
     }
     public void BarretDanoFisico()
     {
-        if (botaoMob[0].gameObject.name == "MobP1C")
+        ani.SetTrigger("ATTACK");
+        if (botaoMob[0].gameObject.name == "MobP1B")
         {
             inimigo[0].MobVida(bStatus.bDano);
             turno = 0;
             return;
         }
-        if (botaoMob[1].gameObject.name == "MobP2C")
+        if (botaoMob[1].gameObject.name == "MobP2B")
         {
             inimigo[1].MobVida(bStatus.bDano);
             turno = 0;
             return;
         }
-        if (botaoMob[2].gameObject.name == "MobP3C")
+        if (botaoMob[2].gameObject.name == "MobP3B")
         {
             inimigo[2].MobVida(bStatus.bDano);
             turno = 0;
             return;
         }
-        if (botaoMob[3].gameObject.name == "MobP4C")
+        if (botaoMob[3].gameObject.name == "MobP4B")
         {
             inimigo[3].MobVida(bStatus.bDano);
             turno = 0;
             return;
         }
-        if (botaoMob[4].gameObject.name == "MobP5C")
+        if (botaoMob[4].gameObject.name == "MobP5B")
         {
             inimigo[4].MobVida(bStatus.bDano);
             turno = 0;
@@ -195,5 +192,10 @@ public class BarretV2 : MonoBehaviour
         {
             botaoMob[0].SetActive(false);
         }
+    }
+    public void Defendendo()
+    {
+        turno = 0;
+        defendendo = true;
     }
 }

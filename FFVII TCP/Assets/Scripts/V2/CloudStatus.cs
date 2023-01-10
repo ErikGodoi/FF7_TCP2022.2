@@ -9,6 +9,8 @@ public class CloudStatus : MonoBehaviour
     public static CloudStatus instancia = null;
     // CLOUD STATUS
     public string cNome;
+    public int cEXP;
+    public int cEXPMax;
     public float cLevel;
     public float cHp, cHpMax;
     public float cMp, cMpMax;
@@ -28,7 +30,6 @@ public class CloudStatus : MonoBehaviour
     public float cDefense;
     public float cMagicAttack;
     public float cMagicDefense;
-    // FIM DO STATUS DO CLOUD
     void Awake()
     {
         if (instancia == null)
@@ -49,6 +50,7 @@ public class CloudStatus : MonoBehaviour
     {
         cNome = "Ex-SOLDIER";
         cLevel = 7;
+        cEXPMax = 350;
 
         cHpMax = 314;
         cMpMax = 57;
@@ -69,9 +71,18 @@ public class CloudStatus : MonoBehaviour
         cHp = cHpMax;
         cMp = cMpMax;
     }
+    private void Update()
+    {
+        if (cEXP >= cEXPMax)
+        {
+            CloudLevelUP();
+        }
+    }
     public void CloudLevelUP()
     {
         cLevel += 1;
+        cEXPMax += 150;
+        cEXP = 0;
 
         cHpMax += 100;
         cMpMax += 50;

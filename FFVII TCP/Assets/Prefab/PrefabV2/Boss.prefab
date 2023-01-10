@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3247600962789856792}
   - component: {fileID: 50654222583708413}
   - component: {fileID: 2023745670567338747}
-  - component: {fileID: 1074024355483831814}
+  - component: {fileID: 6544050290584634007}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Inimigos
@@ -98,7 +98,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1074024355483831814
+--- !u!114 &6544050290584634007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   MobGr: 0
   MobRay: 0
   MobSweep: 0
-  MobBoss: 1
+  MobBoss: 0
   turno: 0
   alvo: -1
   tempoDeAtaque: 0
